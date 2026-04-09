@@ -1,0 +1,13 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="ad-slot ad-leaderboard" data-ad-size="728x90"><!-- AD LEADERBOARD --></div>
+        <h1>Markdown Previewer</h1>
+        <textarea id="markdown-input"></textarea>
+        <div id="preview"></div>
+        <script src="{{ url_for('static', filename='app.js') }}"></script>
+    </body>
+</html>

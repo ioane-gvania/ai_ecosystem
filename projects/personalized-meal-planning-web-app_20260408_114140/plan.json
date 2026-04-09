@@ -1,0 +1,37 @@
+{
+  "project_slug": "personalized-meal-planning-web-app",
+  "description": "A web application for personalized meal planning that partners with certified nutritionists.",
+  "pip_packages": [
+    "flask",
+    "flask-cors",
+    "requests"
+  ],
+  "file_structure": {
+    "app.py": "Main application file containing routes and controllers.",
+    "templates/index.html": "Home page of the web app.",
+    "templates/dashboard.html": "User dashboard where meal plans are displayed.",
+    "static/style.css": "CSS styles for the web app.",
+    "static/app.js": "JavaScript for interactivity in the web app."
+  },
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "returns": "renders index.html"
+    },
+    {
+      "method": "GET",
+      "path": "/api/data",
+      "returns": "JSON list of meal plans"
+    },
+    {
+      "method": "POST",
+      "path": "/api/add",
+      "returns": "JSON success/error"
+    }
+  ],
+  "demo_data": "A few demo meal plans for initial display on the app.",
+  "start_command": "python3 app.py",
+  "test_url": "http://localhost:5000",
+  "feasibility": "BUILDABLE"
+}
