@@ -1,0 +1,33 @@
+
+n
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Env files
+.env
+.env.*
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if any)
+node_modules/
+
+# Your local models / heavy deps
+llama.cpp/
+models/
+checkpoints/
+
+# Git
+.gitmodules
